@@ -1,6 +1,6 @@
 from src.extract import extract_csv
 from src.transform import execute_transformations
-from src.load import load_dataframe_to_sqlite
+from src.load import load_dataframe_to_sqlite, execute_sql_file
 from src.helpers import load_config
 
 
@@ -27,6 +27,10 @@ def main():
         table_name=config.table_name
     )
 
+    execute_sql_file(
+        database_path=config.database_path,
+        sql_file_path=config.sql_path
+    )
 
 if __name__ == "__main__":
     main()

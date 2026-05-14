@@ -6,4 +6,5 @@ from pathlib import Path
 class AppConfig:
     csv_path: Path
     database_path: Path
+    sql_path: Path
     table_name: str

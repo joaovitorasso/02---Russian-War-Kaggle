@@ -17,7 +17,7 @@ def load_dataframe_to_sqlite(
     table_name: str
 ) -> None:
     """Load a pandas DataFrame into a SQLite table."""
-    
+
     conn = create_connection(database_path)
 
     try:
@@ -34,3 +34,17 @@ def load_dataframe_to_sqlite(
 
     finally:
         conn.close()
+
+
+def execute_sql_file(database_path: Path, sql_file_path: Path) -> None:
+    """Execute a SQL files in the SQLite database."""
+
+    if not sql_file_path.exists():
+        raise FileNotFoundError(f"Arquivo SQL não encontrado: {sql_file_path}")
+
+    sql_script = sql_file_path.read_text(encoding="utf-8")
+
+    with sqlite3.connect(database_path) as conn:
+        conn.executescript(sql_script)
+
+    print(f"Script SQL executado com sucesso: {sql_file_path}")

@@ -1,6 +1,7 @@
 paths:
   csv_path: data/russia_losses_equipment.csv
   database_path: database/russianwar.db
+  sql_path: sql/views.sql
 
 database:
   table_name: russia_losses_equipment
