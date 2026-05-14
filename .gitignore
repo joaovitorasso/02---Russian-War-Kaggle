@@ -1,0 +1,16 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Data files
+data/*
+!data/.gitkeep
+
+# Database files
+database/*
+!database/.gitkeep
+
+# OS
+.DS_Store
+Thumbs.db
