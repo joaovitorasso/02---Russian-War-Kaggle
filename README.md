@@ -56,3 +56,10 @@ RussianWar/
 ```bash
 uv sync
 uv run python main.py
+```
+
+## Apache Airflow
+
+```text
+DAG que realiza todo o processo de ETL pode ser utilizada via Apache Airflow
+```

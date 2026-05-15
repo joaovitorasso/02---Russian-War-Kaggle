@@ -131,3 +131,4 @@ def validate_transformed_types(df: pd.DataFrame) -> None:
     for column in TEXT_COLUMNS:
         if not pd.api.types.is_string_dtype(df[column]):
             raise TypeError(f"A coluna '{column}' deveria ser texto.")
+        

@@ -8,3 +8,4 @@ class AppConfig:
     database_path: Path
     sql_path: Path
     table_name: str
+    

@@ -48,3 +48,4 @@ def execute_sql_file(database_path: Path, sql_file_path: Path) -> None:
         conn.executescript(sql_script)
 
     print(f"Script SQL executado com sucesso: {sql_file_path}")
+    
