@@ -16,23 +16,3 @@ def load_config() -> AppConfig:
             table_name=config_data["database"]["table_name"],
             sql_path=Path(config_data["paths"]["sql_path"])
         )
-
-
-def get_csv_path() -> Path:
-    config = load_config()
-    return Path(config["paths"]["csv_path"])
-
-
-def get_database_path() -> Path:
-    config = load_config()
-    return Path(config["paths"]["database_path"])
-
-
-def get_table_name() -> str:
-    config = load_config()
-    return config["database"]["table_name"]
-
-
-def get_views_path() -> Path:
-    config = load_config()
-    return Path(config["paths"]["sql_path"])

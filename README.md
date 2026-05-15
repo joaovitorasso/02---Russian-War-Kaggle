@@ -14,6 +14,18 @@ Construir um pipeline ETL simples, organizado em camadas, que lê um arquivo CSV
 - UV
 - PyYAML
 
+## Dataset
+
+Os dados utilizados neste projeto foram obtidos a partir do Kaggle:
+
+[Russia-Ukraine War Losses Dataset](https://www.kaggle.com/datasets/piterfm/2022-ukraine-russian-war)
+
+O arquivo utilizado no pipeline é:
+
+```text
+data/russia_losses_equipment.csv
+```
+
 ## Estrutura do projeto
 
 ```text
@@ -37,3 +49,10 @@ RussianWar/
 ├── README.md
 ├── pyproject.toml
 └── uv.lock
+```
+
+## Como executar
+
+```bash
+uv sync
+uv run python main.py

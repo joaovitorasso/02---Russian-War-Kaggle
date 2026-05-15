@@ -1,11 +1,16 @@
 [project]
 name = "russianwar"
 version = "0.1.0"
-description = "Add your description here"
+description = "ETL pipeline for Russian war equipment losses dataset using Python, Pandas and SQLite."
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
     "openpyxl>=3.1.5",
     "pandas>=3.0.3",
     "pyyaml>=6.0.3",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=9.0.3",
 ]
