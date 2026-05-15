@@ -61,5 +61,8 @@ uv run python main.py
 ## Apache Airflow
 
 ```text
-DAG que realiza todo o processo de ETL pode ser utilizada via Apache Airflow
+Este projeto também possui uma DAG opcional para orquestração do pipeline com Apache Airflow.
+
+Arquivo:
+dags/russian_war_etl_dag.py
 ```
